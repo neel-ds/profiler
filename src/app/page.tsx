@@ -1,5 +1,4 @@
 import { FrameMetadata } from "@coinbase/onchainkit";
-import styles from "./page.module.css";
 
 export default function Home() {
   return (
@@ -20,7 +19,9 @@ export default function Home() {
         }}
         postUrl={`${process.env.HOST_URL}/frame`}
       />
-      <main className={styles.main}>This is FC Frame.</main>
+      <main className="flex w-full py-10 justify-center font-semibold text-3xl text-sky-300">
+        This is FC Frame.
+      </main>
     </>
   );
 }
